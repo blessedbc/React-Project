@@ -13,6 +13,7 @@ import JobPage, { jobLoader } from './pages/jobPage';
 import AddJobPage from './pages/AddJobPage';
 import EditJobPage from './pages/EditJobPage';
 
+
 const App = () => {
   const addJob = async (newJob) => {
     const res = await fetch('/api/jobs', {
