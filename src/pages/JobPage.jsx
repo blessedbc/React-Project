@@ -8,7 +8,7 @@ import { toast } from 'react-toastify';
 
 const JobPage = ( { deleteJob } ) => {
   const navigate = useNavigate();
-  const { id: _id } = useParams();
+  const { id } = useParams();
   const job = useLoaderData();
 
    const onDeleteClick = (jobId) => {
