@@ -5,9 +5,10 @@ import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
 
+
 const JobPage = ( { deleteJob } ) => {
   const navigate = useNavigate();
-  const { id } = useParams();
+  const { id: _id } = useParams();
   const job = useLoaderData();
 
    const onDeleteClick = (jobId) => {
@@ -111,7 +112,6 @@ const JobPage = ( { deleteJob } ) => {
  );
  
 };
-
 const jobLoader = async ({params})=> {
   const res = await fetch(`/api/jobs/${params.id}`);
   const data = await res.json();
