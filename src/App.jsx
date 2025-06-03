@@ -9,7 +9,7 @@ import MainLayout from './layouts/MainLayout';
 import HomePage from './pages/HomePage';
 import JobsPage from './pages/JobsPage';
 import NotFoundPage from './pages/NotFoundPage';
-import JobPage, { jobLoader } from './pages/jobPage';
+import JobPage, {jobLoader} from './pages/jobPage';
 import AddJobPage from './pages/AddJobPage';
 import EditJobPage from './pages/EditJobPage';
 
@@ -27,14 +27,14 @@ const App = () => {
 };
 
 const deleteJob = async (id) => {
-   const res = await fetch(`/api/jobs/${id}`, {
+   const response = await fetch(`/api/jobs/${id}`, {
       method: 'DELETE'
     });
     return;
 }
 
 const updateJob = async (job) => {
-  const res = await fetch(`/api/jobs/${job.id}`, {
+  const response = await fetch(`/api/jobs/${job.id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',         
