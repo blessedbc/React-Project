@@ -4,8 +4,6 @@ import { FaArrowLeft, FaMapMarker } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
-
-
 const JobPage = ( { deleteJob } ) => {
   const navigate = useNavigate();
   const { id } = useParams();
@@ -33,7 +31,6 @@ const JobPage = ( { deleteJob } ) => {
         </Link>
       </div>
     </section>
-
     <section className="bg-indigo-50">
       <div className="container m-auto py-10 px-6">
         <div className="grid grid-cols-1 md:grid-cols-70/30 w-full gap-6">
