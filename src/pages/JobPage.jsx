@@ -105,7 +105,6 @@ const JobPage = ( { deleteJob } ) => {
 
   </>
  );
- 
 };
 const jobLoader = async ({params})=> {
   const res = await fetch(`/api/jobs/${params.id}`);
