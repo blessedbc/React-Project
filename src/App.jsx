@@ -66,7 +66,6 @@ const router = createBrowserRouter(
   </Route>
   )
 );
-
   return <RouterProvider router={router} />;
 };
 export default App;
