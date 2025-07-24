@@ -98,7 +98,6 @@ const AddJobPage = ( {addJobSubmit} ) => {
                 onChange={ (e) => setDiscription(e.target.value) }
               ></textarea>
             </div>
-
             <div className="mb-4">
               <label htmlFor="type" className="block text-gray-700 font-bold mb-2"
                 >Salary</label
