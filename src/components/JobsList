@@ -1,0 +1,6 @@
+useEffect(() => {
+  fetch('/jobs.json')
+    .then((res) => res.json())
+   // .then((data) => setJobs(data));
+}, []);
+import React, { useState, useEffect } from 'react';
