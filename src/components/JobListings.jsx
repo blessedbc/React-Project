@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import JobListing from './JobListing';
 import Spinner from './Spinner';
 
-
 const JobListings = ({ isHome = false }) => {
   const [jobs, setJobs] = useState([]);
   const [loading, setLoading] = useState(true);
