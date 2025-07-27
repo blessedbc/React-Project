@@ -1,4 +1,4 @@
-import React from 'react'
+/*import React from 'react'
 import { useState, useEffect } from 'react';
 import JobListing from './JobListing';
 import Spinner from './Spinner';
@@ -49,3 +49,39 @@ const JobListings = ({ isHome = false }) => {
 }
 
 export default JobListings
+*/
+
+import React, { useEffect, useState } from 'react';
+
+function JobsList() {
+  const [jobs, setJobs] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch('/jobs.json') // since it's in public/, this will work
+      .then((response) => response.json())
+      .then((data) => {
+        setJobs(data);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error('Error fetching jobs:', error);
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) return <p>Loading jobs...</p>;
+
+  return (
+    <div>
+      {jobs.map((job) => (
+        <div key={job.id}>
+          <h3>{job.title}</h3>
+          <p>{job.company}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+export default JobsList;
