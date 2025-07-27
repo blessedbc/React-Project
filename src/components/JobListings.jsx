@@ -51,37 +51,53 @@ const JobListings = ({ isHome = false }) => {
 export default JobListings
 */
 
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import JobListing from './JobListing';
+import Spinner from './Spinner';
 
-function JobsList() {
+const JobListings = ({ isHome = false }) => {
   const [jobs, setJobs] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('/jobs.json') // since it's in public/, this will work
-      .then((response) => response.json())
-      .then((data) => {
-        setJobs(data);
-        setLoading(false);
-      })
-      .catch((error) => {
-        console.error('Error fetching jobs:', error);
-        setLoading(false);
-      });
-  }, []);
+    const fetchJobs = async () => {
+      try {
+        const res = await fetch('/jobs.json'); // Static file in public/
+        const data = await res.json();
 
-  if (loading) return <p>Loading jobs...</p>;
+        // Simulate `_limit=3` if isHome is true
+        const limitedJobs = isHome ? data.slice(0, 3) : data;
+
+        setJobs(limitedJobs);
+      } catch (error) {
+        console.log('Error fetching data', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchJobs();
+  }, [isHome]);
 
   return (
-    <div>
-      {jobs.map((job) => (
-        <div key={job.id}>
-          <h3>{job.title}</h3>
-          <p>{job.company}</p>
-        </div>
-      ))}
-    </div>
-  );
-}
+    <section className="bg-blue-50 px-4 py-10">
+      <div className="container-xl lg:container m-auto">
+        <h2 className="text-3xl font-bold text-indigo-500 mb-6 text-center">
+          {isHome ? 'Recent Jobs' : 'Browse Jobs'}
+        </h2>
 
-export default JobsList;
+        {loading ? (
+          <Spinner loading={loading} />
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {jobs.map((job) => (
+              <JobListing key={job.id} job={job} />
+            ))}
+          </div>
+        )}
+      </div>
+    </section>
+  );
+};
+
+export default JobListings;
