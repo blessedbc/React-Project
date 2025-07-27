@@ -2,60 +2,54 @@
   "hash": "e14a6985",
   "configHash": "c7ff1b70",
   "lockfileHash": "9456d068",
-  "browserHash": "2b007abb",
+  "browserHash": "de6063eb",
   "optimized": {
     "react": {
       "src": "../../node_modules/react/index.js",
       "file": "react.js",
-      "fileHash": "6c1afe81",
+      "fileHash": "b334badf",
       "needsInterop": true
     },
     "react-dom": {
       "src": "../../node_modules/react-dom/index.js",
       "file": "react-dom.js",
-      "fileHash": "ef074d6b",
+      "fileHash": "0fb890d1",
       "needsInterop": true
     },
     "react/jsx-dev-runtime": {
       "src": "../../node_modules/react/jsx-dev-runtime.js",
       "file": "react_jsx-dev-runtime.js",
-      "fileHash": "e3b98021",
+      "fileHash": "b80db32c",
       "needsInterop": true
     },
     "react/jsx-runtime": {
       "src": "../../node_modules/react/jsx-runtime.js",
       "file": "react_jsx-runtime.js",
-      "fileHash": "a78d6075",
+      "fileHash": "54d20678",
       "needsInterop": true
     },
     "react-dom/client": {
       "src": "../../node_modules/react-dom/client.js",
       "file": "react-dom_client.js",
-      "fileHash": "e3acd4fe",
+      "fileHash": "b3c383c3",
       "needsInterop": true
     },
     "react-icons/fa": {
       "src": "../../node_modules/react-icons/fa/index.mjs",
       "file": "react-icons_fa.js",
-      "fileHash": "8342b330",
+      "fileHash": "ca0f95de",
       "needsInterop": false
     },
     "react-router-dom": {
       "src": "../../node_modules/react-router-dom/dist/index.mjs",
       "file": "react-router-dom.js",
-      "fileHash": "e1421271",
+      "fileHash": "ad23e741",
       "needsInterop": false
-    },
-    "react-spinners/ClipLoader": {
-      "src": "../../node_modules/react-spinners/ClipLoader.js",
-      "file": "react-spinners_ClipLoader.js",
-      "fileHash": "90418abc",
-      "needsInterop": true
     },
     "react-toastify": {
       "src": "../../node_modules/react-toastify/dist/index.mjs",
       "file": "react-toastify.js",
-      "fileHash": "4b6441f7",
+      "fileHash": "e8b7f86d",
       "needsInterop": false
     }
   },
