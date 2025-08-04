@@ -84,7 +84,6 @@ const JobPage = ( { deleteJob } ) => {
 
               <p className="my-2 bg-indigo-100 p-2 font-bold">{ job.company.contactPhone }</p>
             </div>
-
             <div className="bg-white p-6 rounded-lg shadow-md mt-6">
               <h3 className="text-xl font-bold mb-6">Manage Job</h3>
               <Link
