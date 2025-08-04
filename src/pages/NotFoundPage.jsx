@@ -16,5 +16,4 @@ const NotFoundPage = () => {
     </section>
   )
 }
-
 export default NotFoundPage
