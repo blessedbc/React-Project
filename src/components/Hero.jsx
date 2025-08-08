@@ -17,7 +17,6 @@ const Hero = () => {
             Find the React job that fits your skills and needs
           </p>
         </div>
-
       </div>
     </section> 
   )
