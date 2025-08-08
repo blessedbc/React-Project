@@ -46,5 +46,4 @@ if (!showFullDescription) {
           </div>
   )
 }
-
 export default JobListing
