@@ -54,13 +54,11 @@ const router = createBrowserRouter(
     element={<EditJobPage updateJobSubmit={updateJob}/>} 
     loader={jobLoader} 
   />
-
    <Route 
     path='/jobs/:id' 
     element={<JobPage deleteJob={ deleteJob } />} 
     loader={jobLoader} 
   />
-
   <Route path='*' element={<NotFoundPage />} />
   </Route>
   )
