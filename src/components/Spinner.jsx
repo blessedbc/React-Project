@@ -5,7 +5,6 @@ const override = {
   margin: '100px auto'
 };
 
-
 const Spinner = ({ loading }) => {
   return (
     <ClipLoader
