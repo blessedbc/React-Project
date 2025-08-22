@@ -40,6 +40,7 @@ const EditJobPage = ( { updateJobSubmit }) => {
 
      return navigate(`/jobs/${id}`)
   }
+  
   return (
    <section className="bg-indigo-50">
       <div className="container m-auto max-w-2xl py-24">
