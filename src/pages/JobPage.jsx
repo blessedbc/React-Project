@@ -19,7 +19,7 @@ const JobPage = ( { deleteJob } ) => {
 
     navigate('/jobs');
    }
-   
+
     return (
    <>
     <section>
@@ -105,6 +105,7 @@ const JobPage = ( { deleteJob } ) => {
   </>
  );
 };
+
 const jobLoader = async ({params})=> {
   const res = await fetch(`/api/jobs/${params.id}`);
   const data = await res.json();
