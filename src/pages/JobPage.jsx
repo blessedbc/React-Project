@@ -19,6 +19,7 @@ const JobPage = ( { deleteJob } ) => {
 
     navigate('/jobs');
    }
+   
     return (
    <>
     <section>
