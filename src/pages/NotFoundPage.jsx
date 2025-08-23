@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { FaExclamationTriangle } from 'react-icons/fa'
 
 const NotFoundPage = () => {
+  
   return (
         <section className="text-center flex flex-col justify-center items-center h-96">
         <FaExclamationTriangle className='text-yellow-400 text-6xl mb-4'/>
