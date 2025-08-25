@@ -40,6 +40,7 @@ const updateJob = async (job) => {
       },
       body: JSON.stringify(job),
     });
+    
     return;
 }
 
