@@ -62,9 +62,8 @@ const JobPage = ( { deleteJob } ) => {
               <p className="mb-4">{job.salary} / Year</p>
             </div>
           </main>
-          
-          <aside>
 
+          <aside>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold mb-6">Company Info</h3>
 
