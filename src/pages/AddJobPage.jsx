@@ -51,7 +51,7 @@ const AddJobPage = ( {addJobSubmit} ) => {
               <label htmlFor="type" className="block text-gray-700 font-bold mb-2"
                 >Job Type</label
               >
-              
+
               <select
                 id="type"
                 name="type"
@@ -71,6 +71,7 @@ const AddJobPage = ( {addJobSubmit} ) => {
               <label className="block text-gray-700 font-bold mb-2"
                 >Job Listing Name</label
               >
+              
               <input
                 type="text"
                 id="title"
