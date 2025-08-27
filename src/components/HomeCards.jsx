@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Card from './Card'
 
 const HomeCards = () => {
-  
+
   return (
           <section className="py-4">
       <div className="container-xl lg:container m-auto">
@@ -20,6 +20,7 @@ const HomeCards = () => {
               Browse Jobs</Link
               >
           </Card>
+          
           <Card bg='bg-indigo-100'>
             <h2 className="text-2xl font-bold">For Employers</h2>
             <p className="mt-2 mb-4">
