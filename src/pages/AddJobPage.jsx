@@ -71,7 +71,7 @@ const AddJobPage = ( {addJobSubmit} ) => {
               <label className="block text-gray-700 font-bold mb-2"
                 >Job Listing Name</label
               >
-              
+
               <input
                 type="text"
                 id="title"
@@ -97,7 +97,8 @@ const AddJobPage = ( {addJobSubmit} ) => {
                 placeholder="Add any job duties, expectations, requirements, etc"
                 value={ discription }
                 onChange={ (e) => setDiscription(e.target.value) }
-              ></textarea>
+              >                
+              </textarea>
             </div>
             <div className="mb-4">
               <label htmlFor="type" className="block text-gray-700 font-bold mb-2"
