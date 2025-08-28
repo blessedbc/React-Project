@@ -26,6 +26,7 @@ const Navbar = () => {
                 >React Jobs</span
               >
             </NavLink>
+            
             <div className="md:ml-auto">
               <div className="flex space-x-2">
                 <NavLink
