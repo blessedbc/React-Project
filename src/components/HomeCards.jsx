@@ -38,5 +38,4 @@ const HomeCards = () => {
     </section>
   )
 }
-
 export default HomeCards
