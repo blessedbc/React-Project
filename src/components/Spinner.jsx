@@ -6,7 +6,7 @@ const override = {
 };
 
 const Spinner = ({ loading }) => {
-  
+
   return (
     <ClipLoader
       color='#433ca'
@@ -15,5 +15,6 @@ const Spinner = ({ loading }) => {
       size={150}
     />
   )
+  
 }
 export default Spinner
