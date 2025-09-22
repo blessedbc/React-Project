@@ -16,6 +16,5 @@ const Spinner = ({ loading }) => {
       size={150}
     />
   )
-
 }
 export default Spinner
